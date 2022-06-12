@@ -1,0 +1,42 @@
+.main_vis {
+  padding-top: 20rem;
+  text-align: center;
+}
+.main_vis .txt_area {
+  font-weight: 700;
+  margin-bottom: 10rem;
+}
+.main_vis .txt_area h1 {
+  font-size: 5.2rem;
+  margin-bottom: 2rem;
+}
+.main_vis .txt_area p {
+  font-size: 2.4rem;
+  margin-bottom: 5rem;
+}
+.main_vis .txt_area button {
+  padding: 2rem 5rem;
+  background-color: #00c5a8;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+.main_vis .vid_area {
+  position: relative;
+}
+.main_vis .vid_area video {
+  width: 80%;
+  background-color: blue;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.main_vis .vid_area .back {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #daf8f2;
+  transform: translateU(-50%);
+}
