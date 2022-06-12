@@ -1,5 +1,5 @@
 .main_vis {
-  padding-top: 20rem;
+  padding-top: 10rem;
   text-align: center;
 }
 .main_vis .txt_area {
@@ -23,6 +23,7 @@
 }
 .main_vis .vid_area {
   position: relative;
+  margin-bottom: 15rem;
 }
 .main_vis .vid_area video {
   width: 80%;
@@ -39,4 +40,40 @@
   height: 400px;
   background-color: #daf8f2;
   transform: translateU(-50%);
+}
+
+.content1 {
+  padding: 5%;
+}
+.content1 .left_area {
+  float: left;
+  width: 50%;
+}
+.content1 .left_area h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+.content1 .left_area h1.on {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+.content1 .right_area {
+  float: right;
+  width: 50%;
+}
+.content1 .right_area .card_list li {
+  float: left;
+  width: 45%;
+  height: 500px;
+  background: #00c5a8;
+  border-radius: 15px;
+  margin: 0 10% 10% 0;
+}
+.content1 .right_area .card_list li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.content2 {
+  height: 50rem;
 }

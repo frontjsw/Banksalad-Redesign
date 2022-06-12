@@ -19,6 +19,16 @@ header {
     .gnb_list {
       display: inline-block;
       padding: 3rem 1rem;
+      a {
+        transition: 0.3s;
+        border-bottom: 2px solid #fff;
+      }
+      &:hover {
+        a {
+          color: #00c5a8;
+          border-bottom: 2px solid #00c5a8;
+        }
+      }
     }
   }
   .utill {

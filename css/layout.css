@@ -22,6 +22,14 @@ header .gnb_wrap .gnb_list {
   display: inline-block;
   padding: 3rem 1rem;
 }
+header .gnb_wrap .gnb_list a {
+  transition: 0.3s;
+  border-bottom: 2px solid #fff;
+}
+header .gnb_wrap .gnb_list:hover a {
+  color: #00c5a8;
+  border-bottom: 2px solid #00c5a8;
+}
 header .utill {
   position: absolute;
   top: 50%;
