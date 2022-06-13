@@ -14,13 +14,6 @@
   font-size: 2.4rem;
   margin-bottom: 5rem;
 }
-.main_vis .txt_area button {
-  padding: 2rem 5rem;
-  background-color: #00c5a8;
-  color: #fff;
-  font-size: 1.6rem;
-  border-radius: 5px;
-}
 .main_vis .vid_area {
   position: relative;
   margin-bottom: 15rem;
@@ -37,13 +30,14 @@
   top: 50%;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 50rem;
   background-color: #daf8f2;
   transform: translateU(-50%);
 }
 
 .content1 {
-  padding: 5%;
+  padding: 5% 10% 0 10%;
+  position: relative;
 }
 .content1 .left_area {
   float: left;
@@ -56,7 +50,12 @@
 .content1 .left_area h1.on {
   position: fixed;
   top: 5%;
-  left: 5%;
+  left: 10%;
+}
+.content1 .left_area h1.end {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
 }
 .content1 .right_area {
   float: right;
@@ -68,12 +67,36 @@
   height: 500px;
   background: #00c5a8;
   border-radius: 15px;
-  margin: 0 10% 10% 0;
+  margin: 0 0 10% 10%;
 }
-.content1 .right_area .card_list li:nth-child(2n) {
-  margin-right: 0;
+.content1 .right_area .card_list li:nth-child(2n+1) {
+  margin: 0;
+}
+.content1 .right_area .card_list li:last-child {
+  margin-bottom: 0;
+}
+
+.all_btn {
+  text-align: center;
+  margin: 10rem 0 20rem 0;
 }
 
 .content2 {
-  height: 50rem;
+  padding: 10% 0;
+  background-color: #f8f8f8;
+}
+.content2 .tit_wrap {
+  font-size: 4.8rem;
+  font-weight: 700;
+  padding: 0 10%;
+  margin-bottom: 10rem;
+}
+.content2 .vid_wrap {
+  width: 100%;
+  height: 60rem;
+  background: url(../img/con2_vid.png) no-repeat center/cover;
+  margin-bottom: 10rem;
+}
+.content2 .btn_wrap {
+  text-align: center;
 }
