@@ -20,7 +20,7 @@ header .gnb_wrap {
 }
 header .gnb_wrap .gnb_list {
   display: inline-block;
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
 }
 header .gnb_wrap .gnb_list a {
   transition: 0.3s;

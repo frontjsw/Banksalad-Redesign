@@ -15,10 +15,9 @@
   }
   .vid_area {
     position: relative;
-    margin-bottom: 15rem;
+    margin-bottom: 20rem;
     video {
       width: 80%;
-      background-color: blue;
       margin: 0 auto;
       object-fit: cover;
     }
@@ -30,7 +29,6 @@
       width: 100%;
       height: 50rem;
       background-color: #daf8f2;
-      transform: translateU(-50%);
     }
   }
 }
@@ -41,20 +39,27 @@
   .left_area {
     float: left;
     width: 50%;
+    span {
+      color: #00c68e;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      display: block;
+    }
     h1 {
-      font-size: 6rem;
+      font-size: 5rem;
       font-weight: 700;
     }
-    h1.on {
-      position: fixed;
-      top: 5%;
-      left: 10%;
-    }
-    h1.end {
-      position: absolute;
-      bottom: 0;
-      left: 10%;
-    }
+  }
+  .left_area.on {
+    position: fixed;
+    top: 5%;
+    left: 10%;
+  }
+  .left_area.end {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
   }
   .right_area {
     float: right;
@@ -63,15 +68,60 @@
       li {
         float: left;
         width: 45%;
-        height: 500px;
-        background: #00c5a8;
-        border-radius: 15px;
+        height: auto;
+        box-shadow: 3px 3px 10px 0px #ccc;
+        border-radius: 1.5rem;
         margin: 0 0 10% 10%;
+        overflow: hidden;
+        transition: 0.3s;
         &:nth-child(2n + 1) {
           margin: 0;
         }
         &:last-child {
           margin-bottom: 0;
+        }
+        &:hover {
+          transform: scale(1.05);
+        }
+        .img_wrap {
+          height: 19rem;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .txt_wrap {
+          padding: 3rem;
+          .cate {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #00c68e;
+            display: block;
+            margin-bottom: 1rem;
+          }
+          .tit {
+            font-size: 2rem;
+            font-weight: 700;
+            height: 7rem;
+          }
+          .txt {
+            height: 8rem;
+            overflow: hidden;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            margin-bottom: 2rem;
+            display: block;
+
+            color: #707070;
+          }
+          .date {
+            display: block;
+            padding-top: 2rem;
+            border-top: 1px solid #707070;
+            font-size: 1.4rem;
+            color: #707070;
+          }
         }
       }
     }
@@ -79,25 +129,91 @@
 }
 .all_btn {
   text-align: center;
-  margin: 10rem 0 20rem 0;
+  padding: 10rem 0 20rem 0;
 }
 
 .content2 {
   padding: 10% 0;
   background-color: #f8f8f8;
   .tit_wrap {
-    font-size: 4.8rem;
-    font-weight: 700;
     padding: 0 10%;
     margin-bottom: 10rem;
+    span {
+      display: block;
+      color: #00c68e;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 4.8rem;
+      font-weight: 700;
+    }
   }
-  .vid_wrap {
-    width: 100%;
-    height: 60rem;
-    background: url(../img/con2_vid.png) no-repeat center/ cover;
-    margin-bottom: 10rem;
-  }
-  .btn_wrap {
-    text-align: center;
+  .interview {
+    height: 70rem;
+    .swiper {
+      height: 100%;
+      .swiper-button-next {
+        color: #fff;
+        width: 5rem;
+        height: 5rem;
+      }
+      .swiper-button-prev {
+        color: #fff;
+      }
+      .swiper-wrapper {
+        .swiper-slide {
+          position: relative;
+          background: url(../img/interview_bg1.jpg) no-repeat center/ cover;
+          .txt_wrap {
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translateY(-50%);
+            color: #fff;
+            span {
+              display: block;
+              margin-bottom: 1rem;
+              font-size: 1.7rem;
+              font-weight: 500;
+              opacity: 0.7;
+            }
+            h1 {
+              font-size: 4rem;
+              font-weight: 700;
+              margin-bottom: 2rem;
+            }
+            em {
+              font-size: 2.4rem;
+              display: block;
+              margin-bottom: 2rem;
+              opacity: 0.7;
+            }
+            .more {
+              font-size: 1.8rem;
+              font-weight: 5000;
+              a {
+                width: fit-content;
+                padding: 1.5rem 4rem;
+                border: 2px solid #fff;
+                border-radius: 4rem;
+                transition: all 0.3s;
+                &:hover {
+                  color: #000;
+                  background-color: #fff;
+                }
+              }
+            }
+          }
+        }
+        .interview2 {
+          background: url(../img/interview_bg2.jpg) no-repeat center/ cover;
+        }
+        .interview3 {
+          background: url(../img/interview_bg3.jpg) no-repeat center/ cover;
+        }
+      }
+    }
   }
 }
