@@ -107,6 +107,9 @@
   font-size: 2rem;
   font-weight: 700;
   height: 7rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content1 .right_area .card_list li .txt_wrap .txt {
   height: 8rem;

@@ -41,6 +41,55 @@ header .utill .utill_list {
   padding: 0 1rem;
 }
 
+footer {
+  background-color: #00c5a8;
+  color: #fff;
+}
+footer .inner {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .inner .top_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 15rem;
+  margin-bottom: 5rem;
+}
+footer .inner .top_area .logo {
+  width: 22.5rem;
+  height: 3rem;
+  background: url(../img/ft_logo.svg) no-repeat center/cover;
+}
+footer .inner .top_area .link li {
+  display: inline-block;
+  margin-right: 3rem;
+}
+footer .inner .top_area .sns li {
+  font-size: 3rem;
+  display: inline-block;
+  margin-left: 4rem;
+}
+footer .inner .bot_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3rem;
+  font-size: 2rem;
+}
+footer .inner .bot_area .copy {
+  font-size: 1.4rem;
+}
+footer .inner .bot_area .privacy li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+footer .inner .bot_area .privacy li:last-child {
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1450px) {
   html {
     font-size: 9px;

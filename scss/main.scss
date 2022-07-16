@@ -104,6 +104,9 @@
             font-size: 2rem;
             font-weight: 700;
             height: 7rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
           }
           .txt {
             height: 8rem;

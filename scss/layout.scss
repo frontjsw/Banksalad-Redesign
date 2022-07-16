@@ -42,6 +42,60 @@ header {
     }
   }
 }
+footer {
+  background-color: #00c5a8;
+  color: #fff;
+  .inner {
+    width: 80%;
+    margin: 0 auto;
+    .top_area {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: 700;
+      height: 15rem;
+      margin-bottom: 5rem;
+      .logo {
+        width: 22.5rem;
+        height: 3rem;
+        background: url(../img/ft_logo.svg) no-repeat center / cover;
+      }
+      .link {
+        li {
+          display: inline-block;
+          margin-right: 3rem;
+        }
+      }
+      .sns {
+        li {
+          font-size: 3rem;
+          display: inline-block;
+          margin-left: 4rem;
+        }
+      }
+    }
+    .bot_area {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 3rem;
+      font-size: 2rem;
+      .copy {
+        font-size: 1.4rem;
+      }
+      .privacy {
+        li {
+          display: inline-block;
+          margin-left: 2rem;
+          &:last-child {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1450px) {
   html {
